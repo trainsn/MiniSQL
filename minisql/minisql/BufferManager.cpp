@@ -69,7 +69,11 @@ void BufferManager::init_block(blockNode &block)
 {
     memset(block.address, 0, BLOCK_SIZE);
     size_t init_usage = 0;
+<<<<<<< HEAD
     memcpy(block.address, (char*)&init_usage, sizeof(size_t));//set the block head
+=======
+    memcpy(block.address, (char*)init_usage, sizeof(size_t));//set the block head
+>>>>>>> origin/master
     block.using_size = sizeof(size_t);
     block.dirty = false;
     block.nextBlock = NULL;

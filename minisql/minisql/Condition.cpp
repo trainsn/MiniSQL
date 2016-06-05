@@ -85,7 +85,11 @@ bool Condition::ifRight(float content)
 	
 bool Condition::ifRight(string content)
 {	
+<<<<<<< HEAD
 	string myContent = value; //不需要转化，可直接比较 
+=======
+	string myContent; //不需要转化，可直接比较 
+>>>>>>> origin/master
 		
 	switch(operate)//根据被比较值操作类型选择分支 
 	{

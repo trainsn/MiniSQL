@@ -27,6 +27,7 @@ void API::tableDrop(string tableName)
 		indexDrop(indexNameVector[i]);
 	}
 
+<<<<<<< HEAD
 	//delete a table file in RecrordManager
 	if (rm->tableDrop(tableName))
 	{
@@ -34,6 +35,8 @@ void API::tableDrop(string tableName)
 		cm->dropTable(tableName);
 		printf("Drop table %s successfully\n", tableName.c_str());
 	}
+=======
+>>>>>>> origin/master
 }
 
 //drop an index
@@ -480,7 +483,11 @@ void API::indexInsert(string indexName, char* contentBegin, int type, int blockO
 	string content = "";
 	stringstream tmp;
 	//if the attribute has index
+<<<<<<< HEAD
 	if (type == Attribute::TYPE_INT)
+=======
+	if (type = Attribute::TYPE_INT)
+>>>>>>> origin/master
 	{
 		int value = *((int*)contentBegin);
 		tmp << value;

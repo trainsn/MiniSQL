@@ -8,6 +8,12 @@
 #include <stdlib.h>
 #include <time.h>
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> origin/master
 void init()
 {
     FILE *fp;
@@ -24,7 +30,10 @@ clock_t start;
 
 int main(int argc,char * argv[])
 {
+<<<<<<< HEAD
 	int i = 0;
+=======
+>>>>>>> origin/master
     init();
     
     API api;
@@ -42,7 +51,11 @@ int main(int argc,char * argv[])
     clock_t finish;
 
     cout<<"*******************Welcome to use our MiniSQL**********************"<<endl;
+<<<<<<< HEAD
    
+=======
+    cout<<"******************* Author: Deng & Xu & Woo **********************"<<endl;
+>>>>>>> origin/master
     int fileRead = 0;
     //string fileName ="";
     ifstream file;
@@ -97,7 +110,11 @@ int main(int argc,char * argv[])
         }
 
     }
+<<<<<<< HEAD
 	//system("pause");
+=======
+    
+>>>>>>> origin/master
     return 0;
 }
 

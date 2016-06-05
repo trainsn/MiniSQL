@@ -604,7 +604,11 @@ bool BPlusTree<KeyType>::insertKey(KeyType &key,offsetNumber val)
     findToLeaf(root,key,snp);
     if(snp.ifFound)
     {
+<<<<<<< HEAD
         cout << "Error:in insert key to index: the duplicated key!" << key <<endl;
+=======
+        cout << "Error:in insert key to index: the duplicated key!" << endl;
+>>>>>>> origin/master
         return false;
     }
     else
