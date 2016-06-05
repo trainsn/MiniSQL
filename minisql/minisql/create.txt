@@ -1,0 +1,9 @@
+drop table student;
+create table student(sid int, sname char(16), primary key(sid));
+insert into student values(1,'sn');
+insert into student values(2,'zzy');
+insert into student values(3,'llc');
+select * from student;
+select * from student where sname = 'zzy';
+create index stunameidx on student(sname);
+select * from student where sname = 'zzy';

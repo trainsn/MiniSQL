@@ -1,0 +1,13 @@
+*.vcxproj
+*.filters
+minisql/minisql/Debug/vc120.pdb
+*.idb
+minisql/minisql/Debug/minisql.tlog/link-cvtres.write.1.tlog
+*.opensdf
+minisql/Debug/minisql.pdb
+*.sdf
+*.exe
+minisql/Debug/minisql.ilk
+*.obj
+*.tlog
+*.dump
