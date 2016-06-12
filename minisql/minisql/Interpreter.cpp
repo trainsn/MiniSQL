@@ -33,12 +33,8 @@ int Interpreter::interpreter(string s)
 		    string primaryKey="";//主键 
 			string tableName="";//表名
 			word=getWord(s,&tmp);//获取下一个单词
-<<<<<<< HEAD
 			if(!word.empty())
 				tableName=word;
-=======
-			if(!word.empty())tableName=word;
->>>>>>> origin/master
 			else
 			{
 				cout<<"Syntax Error for no table name"<<endl;//报错,没有表名 
@@ -61,15 +57,10 @@ int Interpreter::interpreter(string s)
 					int type=0;//类型默认为int型
 					bool ifUnique=false;//默认为不是Unique 
 					word=getWord(s,&tmp);
-<<<<<<< HEAD
 					if(strcmp(word.c_str(),"int")==0)
 						type=0;
 					else if(strcmp(word.c_str(),"float")==0)
 						type=-1;
-=======
-					if(strcmp(word.c_str(),"int")==0)type=0;
-					else if(strcmp(word.c_str(),"float")==0)type=-1;
->>>>>>> origin/master
 					else if(strcmp(word.c_str(),"char")==0)
 					{
 						word=getWord(s,&tmp);
@@ -85,7 +76,6 @@ int Interpreter::interpreter(string s)
 						{
 							cout<<"Syntax error:illegal number in char()"<<endl;
 							return 0;
-<<<<<<< HEAD
 						}		
 						word = getWord(s, &tmp);
 						if (strcmp(word.c_str(), ")"))
@@ -93,9 +83,6 @@ int Interpreter::interpreter(string s)
 							cout << "Syntax Error: unknown data type" << endl;
 							return 0;
 						}
-=======
-						}					
->>>>>>> origin/master
 					}
 					else//其他类型报错 
 					{
@@ -121,11 +108,7 @@ int Interpreter::interpreter(string s)
 					}
 					word=getWord(s,&tmp);
 				}
-<<<<<<< HEAD
 				int primaryKeyLocation = 0;
-=======
-				int primaryKeyLocation=-1;
->>>>>>> origin/master
 				if(strcmp(word.c_str(),"primary")==0)//处理primaryKey
 				{
 					word=getWord(s,&tmp);
@@ -209,20 +192,14 @@ int Interpreter::interpreter(string s)
 			{
 				if(strcmp(word.c_str(),"on")!=0)
 					throw SyntaxException();//抛出异常
-<<<<<<< HEAD
 				word = getWord(s, &tmp);
-=======
->>>>>>> origin/master
 				if(word.empty())
 					throw SyntaxException();
 				tableName=word;
 				word=getWord(s,&tmp);
 				if(strcmp(word.c_str(),"(")!=0)
 					throw SyntaxException();
-<<<<<<< HEAD
 				word = getWord(s, &tmp);
-=======
->>>>>>> origin/master
 				if(word.empty())
 					throw SyntaxException();
 				attributeName=word;
@@ -439,10 +416,7 @@ int Interpreter::interpreter(string s)
 					if(word.empty())
 						throw SyntaxException();
 					value = word;//被比较值
-<<<<<<< HEAD
 					word = getWord(s, &tmp);
-=======
->>>>>>> origin/master
 					Condition c(attributeName,value,operate);
 					conditionVector.push_back(c);//条件对象放置条件向量里
 					if(word.empty()) //单条件比较
@@ -505,11 +479,6 @@ int Interpreter::interpreter(string s)
 	else if (strcmp(word.c_str(), "quit") == 0)
 	{ return 587;}
 
-<<<<<<< HEAD
-=======
-	else if (strcmp(word.c_str(), "commit") == 0)
-	{ return 1;}
->>>>>>> origin/master
 	else if (strcmp(word.c_str(), "execfile") == 0)
 	{
 		fileName = getWord(s,&tmp);

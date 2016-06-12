@@ -1,1 +1,4 @@
+select * from student where sname = 'zzy1';
 create index stunameidx on student(sname);
+select * from student where sname = 'zzy1';
+

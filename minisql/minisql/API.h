@@ -5,11 +5,7 @@
 #include "Condition.h"
 #include "Minisql.h"
 #include "IndexInfo.h"
-<<<<<<< HEAD
 #include <string.h>
-=======
-#include<string.h>
->>>>>>> origin/master
 #include <vector>
 #include <stdio.h>
 

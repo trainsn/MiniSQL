@@ -194,7 +194,8 @@ int CatalogManager::dropIndex(string indexName)
 		this->revokeIndexOnAttribute((*i).tableName,(*i).Attribute,(*i).indexName);//设置表信息对应属性索引信息为空字符串
 		for(;j<(bm.get_usingSize(*btmp)/sizeof(IndexInfo)-1);j++)//把删除的索引对象后面的索引都往前移一位
 		{
-			(*i)=*(i+sizeof(IndexInfo));
+			//(*i)=*(i+sizeof(IndexInfo));
+			(*i) = *(i + 1);
 			i++;
 		}
 		bm.set_usingSize(*btmp, bm.get_usingSize(*btmp) - sizeof(IndexInfo));//已使用空间减去一个索引对象空间
