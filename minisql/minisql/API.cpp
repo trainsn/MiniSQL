@@ -139,12 +139,12 @@ void API::indexCreate(string indexName, string tableName, string attributeName)
 void API::tableCreate(string tableName, vector<Attribute>* attributeVector, string primaryKeyName, int primaryKeyLocation)
 {
 	//for debug
-	cout << "=========api::tableCreate==========" << endl
-		<< "tableName:" << tableName << " primaryKeyName:" << primaryKeyName << " location" << primaryKeyLocation << endl;
-	for (int i = 0; i < (*attributeVector).size(); i++)
-	{
-		(*attributeVector)[i].print();
-	}
+	//cout << "=========api::tableCreate==========" << endl
+		//<< "tableName:" << tableName << " primaryKeyName:" << primaryKeyName << " location" << primaryKeyLocation << endl;
+// 	for (int i = 0; i < (*attributeVector).size(); i++)
+// 	{
+// 		(*attributeVector)[i].print();
+// 	}
 
 	if (cm->findTable(tableName) == TABLE_FILE)
 	{
@@ -248,7 +248,7 @@ void API::recordShow(string tableName, vector<string>* attributeNameVector, vect
 
 		if (blockOffset == -1)
 		{
-			cout << "if we cannot find the block by index,we need to find all block" << endl;
+			//cout << "if we cannot find the block by index,we need to find all block" << endl;
 			num = rm->recordAllShow(tableName, attributeNameVector, conditionVector);
 		}
 		else
@@ -494,7 +494,7 @@ void API::indexInsert(string indexName, char* contentBegin, int type, int blockO
 	{
 		char value[255];
 		memset(value, 0, sizeof(value));
-		memcpy(value, contentBegin, sizeof(type));
+		memcpy(value, contentBegin, type);
 		string stringTmp = value;
 		tmp << stringTmp;
 	}
@@ -574,7 +574,7 @@ void API::tableAttributePrint(vector<string>* name)
 	int i = 0;
 	for (i = 0; i < (*name).size(); i++)
 	{
-		printf("%s", (*name)[i].c_str());
+		printf("%s ", (*name)[i].c_str());
 	}
 	if (i)
 		printf("\n");

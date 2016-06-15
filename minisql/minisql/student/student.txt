@@ -1,0 +1,6 @@
+create table stu(
+	id int,
+	name char(12) unique,
+	score float,
+	primary key(id) 
+);

@@ -1,88 +1,18 @@
-﻿生成启动时间为 2016/6/11 11:11:04。
+﻿生成启动时间为 2016/6/15 8:09:40。
      1>项目“E:\大学\数据库系统\Project\MiniSQL\minisql\minisql\minisql.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         F:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt API.cpp IndexManager.cpp main.cpp
-         API.cpp
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\indexmanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\api.cpp(23): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\api.cpp(87): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\api.cpp(144): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\api.cpp(208): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\api.cpp(229): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\api.cpp(284): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\api.cpp(309): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\api.cpp(422): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\api.cpp(460): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\api.cpp(513): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\api.cpp(575): warning C4018: “<”: 有符号/无符号不匹配
-         正在生成代码...
-         正在编译...
-         main.cpp
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\indexmanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-         IndexManager.cpp
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\indexmanager.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\indexmanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(1111): warning C4018: “<”: 有符号/无符号不匹配
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(1103): 编译类 模板 成员函数“void BPlusTree<int>::writtenbackToDiskAll(void)”时
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\indexmanager.cpp(45): 参见对正在编译的函数 模板 实例化“void BPlusTree<int>::writtenbackToDiskAll(void)”的引用
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\indexmanager.cpp(45): 参见对正在编译的类 模板 实例化“BPlusTree<int>”的引用
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(841): warning C4018: “<”: 有符号/无符号不匹配
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(778): 编译类 模板 成员函数“bool BPlusTree<int>::adjustAfterDelete(TreeNode<KeyType> )”时
-                 with
-                 [
-                     KeyType=int
-                 ]
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(728): 参见对正在编译的函数 模板 实例化“bool BPlusTree<int>::adjustAfterDelete(TreeNode<KeyType> )”的引用
-                 with
-                 [
-                     KeyType=int
-                 ]
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(505): 编译类 模板 成员函数“BPlusTree<int>::BPlusTree(std::string,int,int)”时
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\indexmanager.cpp(84): 参见对正在编译的函数 模板 实例化“BPlusTree<int>::BPlusTree(std::string,int,int)”的引用
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(877): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(934): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(989): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(1083): warning C4018: “<”: 有符号/无符号不匹配
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(1076): 编译类 模板 成员函数“void BPlusTree<int>::readFromDisk(blockNode *)”时
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(1059): 参见对正在编译的函数 模板 实例化“void BPlusTree<int>::readFromDisk(blockNode *)”的引用
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(1026): 编译类 模板 成员函数“void BPlusTree<int>::dropTree(TreeNode<KeyType> )”时
-                 with
-                 [
-                     KeyType=int
-                 ]
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(518): 参见对正在编译的函数 模板 实例化“void BPlusTree<int>::dropTree(TreeNode<KeyType> )”的引用
-                 with
-                 [
-                     KeyType=int
-                 ]
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(132): warning C4018: “<”: 有符号/无符号不匹配
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(130): 编译类 模板 成员函数“TreeNode<KeyType>::TreeNode(int,bool)”时
-                 with
-                 [
-                     KeyType=int
-                 ]
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(533): 参见对正在编译的函数 模板 实例化“TreeNode<KeyType>::TreeNode(int,bool)”的引用
-                 with
-                 [
-                     KeyType=int
-                 ]
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(278): warning C4018: “<”: 有符号/无符号不匹配
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(266): 编译类 模板 成员函数“TreeNode<KeyType> *TreeNode<KeyType>::splite(KeyType &)”时
-                 with
-                 [
-                     KeyType=int
-                 ]
-                 e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(634): 参见对正在编译的函数 模板 实例化“TreeNode<KeyType> *TreeNode<KeyType>::splite(KeyType &)”的引用
-                 with
-                 [
-                     KeyType=int
-                 ]
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(295): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\大学\数据库系统\project\minisql\minisql\minisql\bplustree.h(301): warning C4018: “<”: 有符号/无符号不匹配
-         正在生成代码...
+         F:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CatalogManager.cpp
+         CatalogManager.cpp
+     1>e:\大学\数据库系统\project\minisql\minisql\minisql\catalogmanager.cpp(57): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\大学\数据库系统\project\minisql\minisql\minisql\catalogmanager.cpp(82): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\大学\数据库系统\project\minisql\minisql\minisql\catalogmanager.cpp(158): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\大学\数据库系统\project\minisql\minisql\minisql\catalogmanager.cpp(186): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\大学\数据库系统\project\minisql\minisql\minisql\catalogmanager.cpp(195): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\大学\数据库系统\project\minisql\minisql\minisql\catalogmanager.cpp(264): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\大学\数据库系统\project\minisql\minisql\minisql\catalogmanager.cpp(368): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\大学\数据库系统\project\minisql\minisql\minisql\catalogmanager.cpp(514): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\大学\数据库系统\project\minisql\minisql\minisql\catalogmanager.cpp(169): warning C4715: “CatalogManager::findIndex”: 不是所有的控件路径都返回值
+     1>e:\大学\数据库系统\project\minisql\minisql\minisql\catalogmanager.cpp(503): warning C4715: “CatalogManager::calcuteLenth2”: 不是所有的控件路径都返回值
        Link:
          F:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\大学\数据库系统\Project\MiniSQL\minisql\Debug\minisql.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\大学\数据库系统\Project\MiniSQL\minisql\Debug\minisql.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\大学\数据库系统\Project\MiniSQL\minisql\Debug\minisql.lib" /MACHINE:X86 Debug\API.obj
          Debug\Attribute.obj
@@ -98,4 +28,4 @@
 
 生成成功。
 
-已用时间 00:00:07.59
+已用时间 00:00:17.37
